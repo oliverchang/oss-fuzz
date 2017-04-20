@@ -44,7 +44,7 @@ RUN mkdir afl && \
     tar -xzv --strip-components=1 -f $SRC/afl-latest.tgz && \
     rm -rf $SRC/afl-latest.tgz
 
-COPY compile compile_afl compile_libfuzzer coverage_report srcmap /usr/local/bin/
+COPY compile compile_afl compile_coverage compile_libfuzzer coverage_report srcmap /usr/local/bin/
 
 CMD ["compile"]
 
